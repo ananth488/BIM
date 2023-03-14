@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Checkup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-image: url(./healthcare-medical-background-flat-icons-symbols-science-medicine-innovation-technology-concept-140008777.jpg);
+            background-repeat: no-repeat;
+            font-family: system-ui;
+            background-size: auto;
+
+        }
+img
+{
+    width: 250px;
+}
+h1{
+    color: #046174;
+}
+       
+        .header
+        {   
+            
+            font-style: italic;
+            padding-left: 150px;
+            
+        }
+        .header a:hover
+        {   
+            
+            font-style: italic;
+            padding-left: 150px;
+            color:#046174 ;
+            
+        }     
+        span
+        {
+            color: orange;
+        }  
+       
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <img src="./logo-90yrs.png">
+                </div>
+                <div class="col-xl-4">
+                    <h1>Patient details</h1>
+                </div>
+                <div class="col-xl-4">
+                    <div class="header">
+                    
+                        <nav class="navbar navbar-expand-lg  ">
+
+                            <div class="container-fluid">
+                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item float-end">
+                                            <a class="nav-link active" aria-current="page" href="Inheritance.html"><span class="single">Home</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Inheritance.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Inheritance.html">Message</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Inheritance.html">Contact</a>
+                                        </li>
+                                   </ul>
+                               </div>
+                           </div>
+                        </nav>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        // single inheritance
+        // class call
+        // {
+        //   a()
+        //   {
+        //     document.write("Call function"+"\n");
+        //   }
+        // }
+
+        // class camera extends call
+        // {
+        //    b()
+        //    {
+        //     document.write("Camera function");
+        //    }
+
+        // }
+
+        // const os=new camera();
+        // os.a();
+        // os.b();
+
+        // multilevel inheritance
+
+        // class window7
+        // {
+        //    theme()
+        //    {
+        //     document.write("coustomized theme function"+"<br>"+"<br>");
+        //    } 
+        // }
+
+        // class windows8 extends window7
+        // {
+        //    spiltscreen()
+        //    {
+        //     document.write("Spiltscree function"+"<br>"+"<br>");
+        //    } 
+        // }
+
+        // class windows10 extends windows8
+        // {
+        //     gamingmode()
+        //     {
+
+        //   document.write("Gaming mode feature added")
+        //     }
+        // }
+
+        // const system=new windows10();
+        // system.theme();0
+        // system.spiltscreen();
+        // system.gamingmode();
+
+
+
+        class grandfather 
+        {
+
+            getdetails() {
+                var name = prompt("Enter your name");
+                document.write("Name is : " + name + "<br>");
+                var age = parseInt(prompt("Enter yor age"));
+                document.write("Age is : " + age + "<br>");
+            }
+
+
+
+
+
+            Bloodpleasure() {
+
+                var BP = parseInt(prompt("Enter yor BP level"));
+                document.write("Your BP level is: " + BP + "<br>");
+                if ((BP > 90) && (BP <= 120)) {
+
+                    document.write("BP is normal" + "<br>");
+                }
+                else if ((BP >= 70) && (BP <= 90)) {
+                    document.write("Your BP leve is low" + "<br>");
+                    document.write("you have eat Grape fruties and green leafy vegitables" + "<br>");
+                    document.write("to take some medicien" + "<br>");
+                }
+                else if ((BP > 120) && (BP <= 140)) {
+
+                    var highBP = "BP level is high to pre hypertention";
+                    document.write(highBP + "<br>");
+                    document.write("Your BP level is high kindly to check with doctor" + "<br>");
+                    document.write("to take some medicien" + "<br>");
+                    document.write("Food" + "<br>");
+                    document.write("drugs" + "<br>");
+
+                }
+                else if ((BP > 140) && (BP <= 160)) {
+
+
+                    document.write("BP level is high to pre hypertention for 1st stage" + "<br>");
+                    document.write("to take some medicien" + "<br>");
+                    document.write("Food" + "<br>");
+                    document.write("drugs" + "<br>");
+
+                }
+                else if (BP > 160) {
+                    document.write("BP level is high to pre hypertention for 2nd stage" + "<br>");
+                    document.write("to take some medicien" + "<br>");
+                    document.write("Food" + "<br>");
+                    document.write("drugs" + "<br>");
+                }
+
+            }
+
+            hemo() {
+
+                var gender = prompt("Enter male or female");
+
+
+                switch (gender) {
+                    case "male":
+                        {
+                            var hemoglobin = parseInt(prompt("Enter yor Hemoglobin level"));
+                            document.write("Hemoglobin level is: " + hemoglobin + "<br>");
+
+                            if ((hemoglobin >= 13.2) && (hemoglobin <= 16.6)) {
+                                document.write("hemoglobin level is normal" + "<br>");
+                            }
+                            else if (hemoglobin > 16.6) {
+                                var highhemo = "Your hemoglobin level is high";
+                                document.write(highhemo + "<br>");
+                                document.write("Result is: High hemoglobin level cause Polycythemia" + "<br>");
+                                document.write("Foods: You have eat chees, poultry and legumes" + "<br>");
+                                document.write("Medicien: Iron sucrose and Nandrolone" + "<br>");
+                            }
+                            else if (hemoglobin < 13.2) {
+                                var lowhemo = "Your hemoglobin level is low";
+                                document.write(lowhemo + "<br>");
+                                document.write("Result is: low hemoglobin level cause Anemia" + "<br>");
+                                document.write("Foods: Eat some healthy foods are Red meat, peas and seeds" + "<br>");
+                                document.write("Medicien: Dapsone, Methyldopa and Levodopa" + "<br>");
+
+
+                            }
+                        };
+                        break;
+                    case "female":
+
+                        {
+                            var hemoglobin = parseInt(prompt("Enter yor Hemoglobin level"));
+                            document.write("Hemoglobin level is: " + hemoglobin + "<br>");
+
+                            if ((hemoglobin >= 11.6) && (hemoglobin <= 15)) {
+                                document.write("hemoglobin level is normal" + "<br>");
+                            }
+                            else if (hemoglobin > 15) {
+                                var highhemo = "Your hemoglobin level is high";
+                                document.write(highhemo + "<br>");
+                                document.write("Result is: High hemoglobin level cause Polycythemia" + "<br>");
+                                document.write("Foods: You have eat chees, poultry and legumes" + "<br>");
+                                document.write("Medicien: Iron sucrose and Nandrolone" + "<br>");
+                            }
+                            else if (hemoglobin < 11.6) {
+                                var lowhemo = "Your hemoglobin level is low";
+                                document.write(lowhemo + "<br>");
+                                document.write("Result is: low hemoglobin level cause Anemia" + "<br>");
+                                document.write("Foods: Eat some healthy foods are Red meat, peas and seeds" + "<br>");
+                                document.write("Medicien: Dapsone, Methyldopa and Levodopa" + "<br>");
+                            }
+                        };
+                        break;
+
+                    default: document.write("Enter only male or female");
+                }
+
+
+            }
+
+            salt() {
+                var sodium = parseInt(prompt("Enter yor Sodium level"));
+                document.write("Your salt level is: " + sodium + "<br>");
+                if ((sodium >= 135) && (sodium <= 145)) {
+                    document.write("<span>Result is:</span> salt level is normal" + "<br>");
+                }
+                else if (sodium > 145) {
+                    var highsalt = "<span>Result is:</span> salt level is high, you have affected for hyponatremia to avoid salty foods";
+                    document.write(highsalt + "<br>");
+                    document.write("Medicien: Clofibrate and choropropamide" + "<br>");
+                }
+                else if (sodium < 135) {
+                    var lowsalt = "<span>Result is:</span> your salt level is low, you have affected for hyponatremia ";
+                    document.write(lowsalt + "<br>");
+                    document.write("Medicien: Clofibrate" + "<br>");
+                }
+
+            }
+
+            // 
+            cholestrol() {
+                var cholestrol = parseInt(prompt("Enter yor cholestrol level"));
+                document.write("Your cholestrol level is: " + cholestrol + "<br>");
+
+                if ((cholestrol >= 200) && (cholestrol <= 239)) {
+                    document.write("Result is: cholestrol level is normal" + "<br>");
+                }
+                else if (cholestrol > 239) {
+                    var highchol = "Result is: your cholestrol level is very dengerous";
+                    document.write(highchol + "<br>");
+                    document.write("Medicien: Simvastation,Lipitor and Repatha " + "<br>")
+                    document.write("Foods: you have Reduce cholesterol to take some foods like, Apple, Grapes, Strawberries and Citrusfruites" + "<br>");
+                }
+                else if (salt < 200) {
+
+                    var lowchol = " Result is: your cholestrol level is risk";
+                    document.write(lowchol + "<br>");
+                    document.write("Medicien: Atrovastatin, Fluvastation" + "<br>");
+                    document.write("Foods: you have Reduce cholesterol to take some foods like,Avocado, Beans, Egg, Garlic, Dark chocolate and Oily fish");
+                }
+
+            }
+            // 
+            sugar() {
+                var BFsugar = parseInt(prompt("Enter your Sugar level for before fasting"));
+                document.write("your BFsugar is: " + BFsugar + "<br>");
+
+                if ((BFsugar >= 90) && (BFsugar <= 140)) {
+
+                    document.write("Before fasting sugar level is normal" + "<br>");
+                }
+                else if (BFsugar > 140) {
+                    document.write("Before fasting sugar level is abnormal" + "<br>");
+                }
+                else if (BFsugar > 450) {
+                    var highsugar = "Before fasting sugar level is to high risk";
+                    document.write(highsugar + "<br>");
+                    document.write("you have eats some fruits, Bread,pasta and vegitables" + "<br>");
+
+                }
+                else if (BFsugar < 90) {
+                    var lowsugar = "Before fasting sugar level is low";
+                    document.write(lowsugar + "<br>");
+                }
+                //  
+
+                var AFsugar = parseInt(prompt("Enter yor Sugar level for after fasting"));
+                document.write("your AFsugar is: " + AFsugar + "<br>");
+
+                if ((AFsugar >= 70) && (AFsugar <= 125)) {
+                    document.write("After fasting sugar level is normal" + "<br>");
+                }
+                else if (AFsugar < 90) {
+                    var lowsugar = "After fasting sugar level is low";
+                    document.write(lowsugar + "<br>");
+                }
+                else if (AFsugar > 125) {
+                    document.write("After fasting sugar level abnormal" + "<br>");
+                }
+
+                //
+
+                if (((BFsugar >= 90) && (BFsugar <= 140)) && ((AFsugar >= 70) && (AFsugar <= 125))) {
+                    document.write("Result is: Sugar level is normal" + "<br>");
+                }
+
+                else if (((BFsugar > 140) && (BFsugar <= 450)) && ((AFsugar > 125)) && (AFsugar <= 450)) {
+                    var a = "Result: your body sugar level is high per diabetic";
+                    document.write(a + "<br>");
+                    document.write("Medicien: You have take Metformin medicine " + "<br>");
+                    document.write("Food: You have avoid sugar foods like candys and sweets." + "<br>");
+
+                }
+                else if (((BFsugar >= 80) && (BFsugar < 90)) && ((AFsugar >= 80) && (AFsugar < 90))) {
+                    var b = "Result: your body sugar level is low diabetic";
+                    document.write(b + "<br>");
+                    document.write("Medicien: You have take Glucagon medicine" + "<br>");
+                    document.write("Food: You have take some sweets and candys" + "<br>");
+
+                }
+
+            }
+
+
+
+
+        }
+        class parents extends grandfather {
+            child() {
+                var weight = parseInt(prompt("Enter your weight" + "<br>"));
+                document.write("Your Weight is: " + weight + "<br>");
+                var height = parseFloat(prompt("Enter your Height" + "<br>"));
+                document.write("Your Height  is: " + height + " meter" + "<br>");
+
+                var BMI = ((weight) / (height * height));
+                document.write("Your BMI level is" + BMI + "<br>");
+                if (BMI < 18.5) {
+                    var I = ("Result is: You're in the underweight range");
+                    document.write(I + "<br>");
+                }
+                else if ((BMI >= 18.5) && (BMI <= 24.9)) {
+                    var W = ("Result is: You're in the healthy weight range" + "<br>");
+
+                    document.write(W + "<br>");
+                }
+                else if ((BMI >= 25) && (BMI <= 29.9)) {
+                    var E = ("Result is: You're in the overweight range");
+                    document.write(E + "<br>");
+                }
+                else if (BMI > 30) {
+                    var G = ("Result is: You're in the obese range");
+                    document.write(G + "<br>");
+                }
+
+
+            }
+
+
+        }
+
+        const obj = new parents();
+        obj.getdetails();
+        obj.Bloodpleasure();
+        obj.hemo();
+        obj.salt();
+        obj.cholestrol();
+        obj.sugar();
+        obj.child();
+
+
+    </script>
+
+</body>
+
+</html>
